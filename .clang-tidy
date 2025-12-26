@@ -1,0 +1,11 @@
+# .clang-tidy configuration file
+
+# Specify the checks you want to enable or disable
+# Checks: '-*,clang-analyzer-*'  # Enable all clang-analyzer checks
+# Example: Enable specific checks
+# Checks: 'modernize-*,-modernize-use-auto'
+# Checks: '-clang-analyzer-*,-modernize-*,google-*'
+# Only check for Google style guide checks
+Checks: '-*,google-*'
+FormatStyle: 'google'
+WarningsAsErrors: '*'
