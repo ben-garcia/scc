@@ -7,7 +7,7 @@ CC=gcc
 OPT=-O0
 # generate files that encode make rules for the .h dependencies
 DEPFLAGS=-MP -MD
-CFLAGS=-Wall -Wextra -Werror -g -I$(INCDIR) $(OPT) $(DEPFLAGS)
+CFLAGS=-Wall -Wextra -Werror -g -std=c11 -I$(INCDIR) $(OPT) $(DEPFLAGS)
 
 # $(wildcard pattern…)
 # get a list of files that match the pattern.

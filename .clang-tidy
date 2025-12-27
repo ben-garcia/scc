@@ -6,6 +6,7 @@
 # Checks: 'modernize-*,-modernize-use-auto'
 # Checks: '-clang-analyzer-*,-modernize-*,google-*'
 # Only check for Google style guide checks
-Checks: '-*,google-*'
-FormatStyle: 'google'
+#Checks: '-google-objc-function-naming,google-*'
+Checks: '-google-objc-function-naming'
+FormatStyle: 'file' # use clang-format
 WarningsAsErrors: '*'
