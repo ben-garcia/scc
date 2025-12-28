@@ -1,4 +1,4 @@
-#include "../include/compiler_driver.h"
+#include "include/compiler_driver.h"
 
 static void remove_file_extension(const char *const filename,
                                   const char *buffer) {
