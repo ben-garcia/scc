@@ -1,22 +1,28 @@
+/**
+ * @file compiler_driver.h
+ * @brief Serves as the wrapper for the whole c compilation process.
+ *
+ * Compiler driver exposes a single function.
+ *
+ * @author ben
+ * @date 12/29/2025
+ */
+
 #ifndef SCC_COMPILER_DRIVER_H
 #define SCC_COMPILER_DRIVER_H
-
-// Serves as a wrapper for the following:
-// 1. Preprocessor
-// 2. Compiler
-// 3. Assembler
-// 4. Linker
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define SCC_PANIC(message)                      \
-  do {                                          \
-    fprintf(stderr, "Error: %s \n", (message)); \
-    abort();                                    \
-  } while (0);
-
+/**
+ * @brief Compile C source code.
+ *
+ * Generate an executable file from source code.
+ *
+ * @param filename file that be compiled
+ * @return 0 on success, positive integer otherwise
+ */
 int compiler_driver_run(const char *const filename);
 
 #endif  // SCC_COMPILER_DRIVER_H
